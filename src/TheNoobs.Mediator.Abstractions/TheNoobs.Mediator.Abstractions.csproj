@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsPackable>true</IsPackable>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <OutputType>library</OutputType>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Authors>The Noobs</Authors>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <RepositoryType>GIT</RepositoryType>
+    <LangVersion>default</LangVersion>
+    <PackageIcon>icon.png</PackageIcon>
+
+    <PackageId>TheNoobs.Mediator.Abstractions</PackageId>
+    <Description>The mediator abstractions for .NET</Description>
+    <PackageProjectUrl>https://github.com/thenoobsbr/mediator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/thenoobsbr/mediator</RepositoryUrl>
+    <PackageTags>dotnet; mediator</PackageTags>
+
+    <UserSecretsId>{38FE611A-008D-4E04-A56B-34CF77D88BD2}</UserSecretsId>
+    <ProjectGuid>{85A33E91-27B0-4D00-BAD4-14D7ACD3FC68}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\images\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TheNoobs.Results" Version="4.4.3" />
+  </ItemGroup>
+
+</Project>
